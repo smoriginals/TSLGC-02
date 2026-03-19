@@ -1292,6 +1292,11 @@ p { color: var(--text-secondary); }
   .contact-form { padding: 24px 20px; }
   .contact-info-item { padding: 15px 18px; }
 
+  /* Section action strips */
+  .section-action-strip { margin-top: 42px; padding-top: 30px; }
+  .section-action-strip .btn-cta,
+  .section-action-strip .btn-outline-cta { padding: 11px 22px; font-size: .9rem; }
+
   /* Footer */
   .footer-top { padding: 44px 0 32px; }
   .footer-newsletter { flex-wrap: wrap; }
@@ -1389,8 +1394,11 @@ p { color: var(--text-secondary); }
   /* Testimonials */
   .testimonial-card { padding: 22px 16px; }
   .testi-text { font-size: .85rem; line-height: 1.7; margin-bottom: 18px; }
+  .testi-author { gap: 10px; }
   .testi-author h5 { font-size: .86rem; }
   .testi-author span { font-size: .75rem; }
+  .testi-avatar { width: 52px; height: 52px; min-width: 52px; max-width: 52px; }
+  .testi-video-btn { width: 34px; height: 34px; font-size: .88rem; flex-shrink: 0; }
 
   /* Video */
   .vt-img { height: 140px; }
@@ -1423,11 +1431,70 @@ p { color: var(--text-secondary); }
   .footer-brand p { font-size: .83rem; }
   .footer-bottom { font-size: .78rem; padding: 14px 0; }
 
-  /* Floating buttons — reposition so they don't overlap */
-  .whatsapp-float { bottom: 76px; right: 16px; width: 50px; height: 50px; font-size: 1.35rem; }
-  #back-to-top { bottom: 18px; right: 16px; width: 42px; height: 42px; font-size: .9rem; }
+  /* Section action strips — stack buttons vertically */
+  .section-action-strip { margin-top: 30px; padding-top: 22px; }
+  .section-action-strip > p { font-size: .82rem; margin-bottom: 16px; }
+  .section-action-strip .action-btns { flex-direction: column; align-items: center; gap: 10px; }
+  .section-action-strip .btn-cta,
+  .section-action-strip .btn-outline-cta {
+    width: 100%; max-width: 300px;
+    justify-content: center; padding: 12px 20px; font-size: .88rem;
+  }
+
+  /* Bootstrap row gutter override for stacked rows */
+  .calculator-wrap .row { --bs-gutter-y: 1.25rem; --bs-gutter-x: 0.5rem; }
+  #contact .row        { --bs-gutter-y: 1.5rem;  --bs-gutter-x: 1rem; }
+
+  /* Back to top — WhatsApp hidden so sit flush at bottom */
+  #back-to-top { bottom: 20px; right: 16px; width: 42px; height: 42px; font-size: .9rem; }
+
+  /* Disable hover card lift on touch to prevent stuck states */
+  .glass-card:hover { transform: none; box-shadow: var(--glass-shadow); }
+  .glass-card:hover { background: var(--glass-bg); }
 
   /* Hidden on mobile */
   #visitor-ribbon { display: none; }
   .trust-strip { display: none; }
+}
+
+/* ── Ultra-small 320px – 400px ─────────────────────────────── */
+@media (max-width: 400px) {
+  .section-title { font-size: 1.42rem; }
+  .section-subtitle { font-size: .82rem; }
+
+  /* Hero tighter */
+  .hero-title { font-size: 1.6rem; }
+  .hero-subtitle { font-size: .82rem; }
+  .hero-stats { gap: 5px; }
+  .stat-badge { padding: 9px 7px; min-width: 60px; }
+  .stat-val { font-size: 1rem; }
+  .stat-lbl { font-size: .62rem; }
+
+  /* Countdown — 2×2 grid so it never overflows */
+  .countdown-timer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-items: center;
+  }
+  .cd-sep { display: none; }
+  .countdown-unit { min-width: 0; width: 100%; padding: 14px 10px; }
+  .cd-num { font-size: 1.55rem; }
+
+  /* Plan selector — 2×2 grid */
+  .plan-selector { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .plan-sel-btn { flex: none; width: 100%; }
+
+  /* Calculator result cards — stack label and value */
+  .calc-res-card { flex-direction: column; align-items: flex-start; gap: 4px; padding: 12px; }
+  .res-value { font-size: 1.1rem; }
+  .calc-res-card.highlight .res-value { font-size: 1.25rem; }
+
+  /* Contact form — tighter */
+  .contact-form { padding: 14px 10px; }
+  .custom-input { padding: 10px 11px !important; font-size: .83rem !important; }
+
+  /* Testimonial author — wrap if needed */
+  .testi-author { flex-wrap: wrap; }
+  .testi-author > div { flex: 1 1 auto; }
 }
