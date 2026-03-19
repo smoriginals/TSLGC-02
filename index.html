@@ -69,7 +69,7 @@
        NAVIGATION
   ============================================================ -->
   <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid px-4">
+    <div class="container px-3 px-lg-4">
 
       <!-- Brand -->
       <a class="navbar-brand" href="#hero">
@@ -83,7 +83,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav mx-auto gap-1">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link lang-text" href="#hero"      data-en="Home"       data-hi="होम">Home</a></li>
           <li class="nav-item"><a class="nav-link lang-text" href="#about"     data-en="About"      data-hi="हमारे बारे में">About</a></li>
           <li class="nav-item"><a class="nav-link lang-text" href="#plans"     data-en="Plans"      data-hi="प्लान">Plans</a></li>
@@ -93,7 +93,7 @@
           <li class="nav-item"><a class="nav-link lang-text" href="#contact"   data-en="Contact"    data-hi="संपर्क">Contact</a></li>
         </ul>
 
-        <div class="nav-actions d-flex align-items-center gap-3">
+        <div class="nav-actions d-flex align-items-center gap-2">
           <!-- Language Toggle -->
           <button class="btn-lang" id="langToggle" title="Switch Language">
             <span class="lang-flag" id="langFlag">🇬🇧</span>
@@ -230,7 +230,7 @@
     <div class="container">
       <div class="row align-items-center g-5">
 
-        <div class="col-lg-6" data-aos="fade-right">
+        <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right">
           <div class="about-visual-wrap">
             <div class="about-img-primary glass-card">
               <i class="fa-solid fa-handshake about-big-icon"></i>
@@ -250,7 +250,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+        <div class="col-lg-6 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100">
           <div class="section-label">
             <span class="lang-text" data-en="About UnifyHub" data-hi="UnifyHub के बारे में">About UnifyHub</span>
           </div>
@@ -372,7 +372,7 @@
         </p>
       </div>
 
-      <div class="row g-4 plans-row">
+      <div class="row g-4 plans-row align-items-stretch">
 
         <!-- Bronze -->
         <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
@@ -468,6 +468,24 @@
         </div>
 
       </div><!-- end .row -->
+
+      <!-- Plans bottom action strip -->
+      <div class="section-action-strip" data-aos="fade-up">
+        <p>
+          <i class="fa-solid fa-shield-halved"></i>
+          <span class="lang-text" data-en="All plans include 30-day money-back guarantee &bull; No hidden charges &bull; Instant activation" data-hi="सभी प्लान में 30 दिन की मनी-बैक गारंटी &bull; कोई छुपे शुल्क नहीं &bull; तत्काल सक्रियता">All plans include 30-day money-back guarantee &bull; No hidden charges &bull; Instant activation</span>
+        </p>
+        <div class="action-btns">
+          <a href="#contact" class="btn btn-cta ripple-btn magnetic-btn">
+            <i class="fa-solid fa-headset"></i>
+            <span class="lang-text" data-en="Talk to an Advisor" data-hi="सलाहकार से बात करें">Talk to an Advisor</span>
+          </a>
+          <a href="#calculator" class="btn-outline-cta ripple-btn">
+            <i class="fa-solid fa-calculator"></i>
+            <span class="lang-text" data-en="Calculate Earnings" data-hi="कमाई की गणना करें">Calculate Earnings</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -611,6 +629,25 @@
           </div>
         </div>
       </div>
+
+      <!-- Calculator bottom action strip -->
+      <div class="section-action-strip" data-aos="fade-up">
+        <p class="lang-text"
+           data-en="Ready to start your journey? Pick a plan and begin earning today."
+           data-hi="अपनी यात्रा शुरू करने के लिए तैयार? एक प्लान चुनें और आज से कमाना शुरू करें।">
+          Ready to start your journey? Pick a plan and begin earning today.
+        </p>
+        <div class="action-btns">
+          <a href="#plans" class="btn btn-cta ripple-btn magnetic-btn">
+            <i class="fa-solid fa-rocket"></i>
+            <span class="lang-text" data-en="Choose Your Plan" data-hi="अपना प्लान चुनें">Choose Your Plan</span>
+          </a>
+          <a href="#contact" class="btn-outline-cta ripple-btn">
+            <i class="fa-solid fa-phone"></i>
+            <span class="lang-text" data-en="Free Consultation" data-hi="मुफ्त परामर्श">Free Consultation</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -636,7 +673,7 @@
              "I joined UnifyHub 8 months ago with the Gold plan. Today I earn ₹65,000/month consistently. The training and support team are amazing!"
           </p>
           <div class="testi-author">
-            <img src="https://ui-avatars.com/api/?name=Rahul+Sharma&background=7c3aed&color=fff&size=60" alt="Rahul Sharma" loading="lazy" class="testi-avatar" />
+            <img src="https://ui-avatars.com/api/?name=Rahul+Sharma&background=7c3aed&color=fff&size=80" alt="Rahul Sharma" loading="lazy" class="testi-avatar" />
             <div>
               <h5>Rahul Sharma</h5>
               <span class="lang-text" data-en="Gold Partner, Delhi" data-hi="गोल्ड पार्टनर, दिल्ली">Gold Partner, Delhi</span>
@@ -655,7 +692,7 @@
              "As a homemaker, I never thought I could earn this much. UnifyHub's Silver plan gave me financial independence. ₹38,000 last month!"
           </p>
           <div class="testi-author">
-            <img src="https://ui-avatars.com/api/?name=Priya+Patel&background=06b6d4&color=fff&size=60" alt="Priya Patel" loading="lazy" class="testi-avatar" />
+            <img src="https://ui-avatars.com/api/?name=Priya+Patel&background=06b6d4&color=fff&size=80" alt="Priya Patel" loading="lazy" class="testi-avatar" />
             <div>
               <h5>Priya Patel</h5>
               <span class="lang-text" data-en="Silver Partner, Ahmedabad" data-hi="सिल्वर पार्टनर, अहमदाबाद">Silver Partner, Ahmedabad</span>
@@ -674,7 +711,7 @@
              "Platinum plan changed my life completely. I built a team of 200+ in 6 months and my monthly income crossed ₹1.5 lakh. Truly India's best!"
           </p>
           <div class="testi-author">
-            <img src="https://ui-avatars.com/api/?name=Amit+Verma&background=f59e0b&color=fff&size=60" alt="Amit Verma" loading="lazy" class="testi-avatar" />
+            <img src="https://ui-avatars.com/api/?name=Amit+Verma&background=f59e0b&color=fff&size=80" alt="Amit Verma" loading="lazy" class="testi-avatar" />
             <div>
               <h5>Amit Verma</h5>
               <span class="lang-text" data-en="Platinum Partner, Mumbai" data-hi="प्लैटिनम पार्टनर, मुंबई">Platinum Partner, Mumbai</span>
@@ -693,7 +730,7 @@
              "I was skeptical at first but UnifyHub's transparency convinced me. 4 months in, I've already recovered my investment and earning ₹22,000/month!"
           </p>
           <div class="testi-author">
-            <img src="https://ui-avatars.com/api/?name=Sunita+Rao&background=10b981&color=fff&size=60" alt="Sunita Rao" loading="lazy" class="testi-avatar" />
+            <img src="https://ui-avatars.com/api/?name=Sunita+Rao&background=10b981&color=fff&size=80" alt="Sunita Rao" loading="lazy" class="testi-avatar" />
             <div>
               <h5>Sunita Rao</h5>
               <span class="lang-text" data-en="Bronze Partner, Hyderabad" data-hi="ब्रॉन्ज़ पार्टनर, हैदराबाद">Bronze Partner, Hyderabad</span>
@@ -712,7 +749,7 @@
              "The mentorship at UnifyHub is unmatched. My mentor helped me scale to 150 team members. Now I earn while I sleep. Best decision of my life!"
           </p>
           <div class="testi-author">
-            <img src="https://ui-avatars.com/api/?name=Kiran+Singh&background=ef4444&color=fff&size=60" alt="Kiran Singh" loading="lazy" class="testi-avatar" />
+            <img src="https://ui-avatars.com/api/?name=Kiran+Singh&background=ef4444&color=fff&size=80" alt="Kiran Singh" loading="lazy" class="testi-avatar" />
             <div>
               <h5>Kiran Singh</h5>
               <span class="lang-text" data-en="Gold Partner, Chandigarh" data-hi="गोल्ड पार्टनर, चंडीगढ़">Gold Partner, Chandigarh</span>
@@ -962,6 +999,25 @@
           </div>
         </div>
       </div>
+
+      <!-- Video section bottom action strip -->
+      <div class="section-action-strip" data-aos="fade-up">
+        <p class="lang-text"
+           data-en="Subscribe to our YouTube channel for weekly success stories and training videos."
+           data-hi="साप्ताहिक सफलता की कहानियों और प्रशिक्षण वीडियो के लिए हमारे YouTube चैनल को सब्सक्राइब करें।">
+          Subscribe to our YouTube channel for weekly success stories and training videos.
+        </p>
+        <div class="action-btns">
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-cta ripple-btn magnetic-btn">
+            <i class="fa-brands fa-youtube"></i>
+            <span class="lang-text" data-en="Subscribe on YouTube" data-hi="YouTube पर सब्सक्राइब करें">Subscribe on YouTube</span>
+          </a>
+          <a href="#contact" class="btn-outline-cta ripple-btn">
+            <i class="fa-solid fa-share-nodes"></i>
+            <span class="lang-text" data-en="Share Our Story" data-hi="हमारी कहानी साझा करें">Share Our Story</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1170,11 +1226,7 @@
        FLOATING ELEMENTS
   ============================================================ -->
 
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20UnifyHub!" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-    <span class="wa-tooltip lang-text" data-en="Chat with us!" data-hi="हमसे चैट करें!">Chat with us!</span>
-  </a>
+
 
   <!-- Back to Top -->
   <button id="back-to-top" aria-label="Back to top">
