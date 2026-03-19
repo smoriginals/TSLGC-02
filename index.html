@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UnifyHub – India's Biggest Alliance Market. Join millions of business partners, earn passive income, and grow your network with cutting-edge technology." />
+  <meta name="keywords" content="UnifyHub, Alliance Market, Network Marketing, India, Passive Income, Business Opportunity" />
+  <meta property="og:title" content="UnifyHub – India's Biggest Alliance Market" />
+  <meta property="og:description" content="Join India's most trusted alliance & partnership platform." />
+  <title>UnifyHub – India's Biggest Alliance Market</title>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%237c3aed'/><stop offset='100%25' stop-color='%2306b6d4'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text y='.88em' font-size='65' text-anchor='middle' x='50' fill='white'>U</text></svg>" />
+
+  <!-- ==== STYLESHEETS – CDN ==== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ==== CUSTOM STYLESHEETS ==== -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       PRELOADER
+  ============================================================ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span class="logo-u">U</span><span class="logo-hub">nifyHub</span>
+      </div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+      <p class="preloader-text lang-text" data-en="Loading Premium Experience…" data-hi="प्रीमियम अनुभव लोड हो रहा है…">Loading Premium Experience…</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CUSTOM CURSOR
+  ============================================================ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ============================================================
+       SCROLL PROGRESS BAR
+  ============================================================ -->
+  <div id="progress-bar"></div>
+
+  <!-- ============================================================
+       LIVE VISITOR COUNTER (top ribbon)
+  ============================================================ -->
+  <div id="visitor-ribbon">
+    <i class="fa-solid fa-circle-dot pulse-green"></i>
+    <span class="lang-text" data-en="Live visitors right now:" data-hi="अभी लाइव विज़िटर:">Live visitors right now:</span>
+    <strong id="visitorCount">847</strong>
+    <span class="sep">|</span>
+    <i class="fa-solid fa-users"></i>
+    <span class="lang-text" data-en="Total Members:" data-hi="कुल सदस्य:">Total Members:</span>
+    <strong>5,20,000+</strong>
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-4">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-icon"><i class="fa-solid fa-network-wired"></i></span>
+        <span class="brand-name">Unify<span class="brand-accent">Hub</span></span>
+      </a>
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link lang-text" href="#hero"      data-en="Home"       data-hi="होम">Home</a></li>
+          <li class="nav-item"><a class="nav-link lang-text" href="#about"     data-en="About"      data-hi="हमारे बारे में">About</a></li>
+          <li class="nav-item"><a class="nav-link lang-text" href="#plans"     data-en="Plans"      data-hi="प्लान">Plans</a></li>
+          <li class="nav-item"><a class="nav-link lang-text" href="#how"       data-en="How It Works" data-hi="कैसे काम करता है">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link lang-text" href="#calculator" data-en="Calculator" data-hi="कैलकुलेटर">Calculator</a></li>
+          <li class="nav-item"><a class="nav-link lang-text" href="#testimonials" data-en="Reviews"  data-hi="समीक्षाएं">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link lang-text" href="#contact"   data-en="Contact"    data-hi="संपर्क">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions d-flex align-items-center gap-3">
+          <!-- Language Toggle -->
+          <button class="btn-lang" id="langToggle" title="Switch Language">
+            <span class="lang-flag" id="langFlag">🇬🇧</span>
+            <span id="langLabel">EN</span>
+          </button>
+          <!-- Dark / Light Mode -->
+          <button class="btn-theme" id="themeToggle" title="Toggle Theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <!-- CTA -->
+          <a href="#plans" class="btn btn-cta ripple-btn lang-text" data-en="Join Now" data-hi="अभी जुड़ें">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero">
+    <div id="particles-js"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content text-center">
+      <div class="hero-badge wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
+        <i class="fa-solid fa-star"></i>
+        <span class="lang-text" data-en="India's #1 Alliance Platform" data-hi="भारत का #1 एलायंस प्लेटफॉर्म">India's #1 Alliance Platform</span>
+      </div>
+
+      <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+        <span class="typed-static lang-text" data-en="Build Your Empire with" data-hi="बनाएं अपना साम्राज्य">Build Your Empire with</span><br />
+        <span id="typed-text" class="gradient-text"></span>
+      </h1>
+
+      <p class="hero-subtitle wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+        <span class="lang-text" data-en="Join 5,20,000+ partners across 28 states. Earn ₹25,000–₹2,00,000/month through India's most powerful alliance &amp; referral network." data-hi="28 राज्यों में 5,20,000+ साझेदारों के साथ जुड़ें। भारत के सबसे शक्तिशाली एलायंस नेटवर्क से ₹25,000–₹2,00,000/माह कमाएं।">Join 5,20,000+ partners across 28 states. Earn ₹25,000–₹2,00,000/month through India's most powerful alliance &amp; referral network.</span>
+      </p>
+
+      <div class="hero-actions wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+        <a href="#plans" class="btn btn-hero-primary ripple-btn magnetic-btn"
+           data-en="Start Earning Today" data-hi="आज से कमाई शुरू करें">
+          <i class="fa-solid fa-rocket"></i>
+          <span class="lang-text" data-en="Start Earning Today" data-hi="आज से कमाई शुरू करें">Start Earning Today</span>
+        </a>
+        <button class="btn btn-hero-secondary video-modal-btn ripple-btn magnetic-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <i class="fa-solid fa-circle-play"></i>
+          <span class="lang-text" data-en="Watch Demo" data-hi="डेमो देखें">Watch Demo</span>
+        </button>
+      </div>
+
+      <!-- Floating Stats Badges -->
+      <div class="hero-stats wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+        <div class="stat-badge float-anim">
+          <span class="stat-val">5.2L+</span>
+          <span class="stat-lbl lang-text" data-en="Members" data-hi="सदस्य">Members</span>
+        </div>
+        <div class="stat-badge float-anim" style="animation-delay:.4s">
+          <span class="stat-val">₹100Cr+</span>
+          <span class="stat-lbl lang-text" data-en="Paid Out" data-hi="भुगतान">Paid Out</span>
+        </div>
+        <div class="stat-badge float-anim" style="animation-delay:.8s">
+          <span class="stat-val">28</span>
+          <span class="stat-lbl lang-text" data-en="States" data-hi="राज्य">States</span>
+        </div>
+        <div class="stat-badge float-anim" style="animation-delay:1.2s">
+          <span class="stat-val">99%</span>
+          <span class="stat-lbl lang-text" data-en="Satisfaction" data-hi="संतुष्टि">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span class="lang-text" data-en="Scroll to explore" data-hi="स्क्रॉल करें">Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRUST TICKER STRIP
+  ============================================================ -->
+  <div class="trust-strip">
+    <div class="trust-ticker">
+      <div class="ticker-track">
+        <span><i class="fa-solid fa-users"></i> 5,20,000+ Active Partners</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹100Cr+ Total Paid Out</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-shield-halved"></i> DIPP Registered &amp; Verified</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-map-location-dot"></i> Present in 28 States</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-trophy"></i> Best Alliance Platform 2024</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-star"></i> 99% Partner Satisfaction</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-clock"></i> 24/7 Dedicated Support</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> Free Training for All Members</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-bolt"></i> Instant Withdrawals to Bank</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-lock"></i> 100% Secure Platform</span>
+        <span class="sep-dot">•</span>
+        <!-- Duplicate for seamless loop -->
+        <span><i class="fa-solid fa-users"></i> 5,20,000+ Active Partners</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹100Cr+ Total Paid Out</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-shield-halved"></i> DIPP Registered &amp; Verified</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-map-location-dot"></i> Present in 28 States</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-trophy"></i> Best Alliance Platform 2024</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-star"></i> 99% Partner Satisfaction</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-clock"></i> 24/7 Dedicated Support</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> Free Training for All Members</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-bolt"></i> Instant Withdrawals to Bank</span>
+        <span class="sep-dot">•</span>
+        <span><i class="fa-solid fa-lock"></i> 100% Secure Platform</span>
+        <span class="sep-dot">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-visual-wrap">
+            <div class="about-img-primary glass-card">
+              <i class="fa-solid fa-handshake about-big-icon"></i>
+            </div>
+            <div class="about-badge-1 glass-card float-anim">
+              <i class="fa-solid fa-trophy"></i>
+              <span class="lang-text" data-en="Best Alliance Platform 2024" data-hi="सर्वश्रेष्ठ एलायंस प्लेटफॉर्म 2024">Best Alliance Platform 2024</span>
+            </div>
+            <div class="about-badge-2 glass-card float-anim" style="animation-delay:.5s">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span class="lang-text" data-en="100% Secure" data-hi="100% सुरक्षित">100% Secure</span>
+            </div>
+            <div class="about-experience-tag">
+              <span class="exp-num">8+</span>
+              <span class="exp-txt lang-text" data-en="Years of Excellence" data-hi="वर्षों की उत्कृष्टता">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+          <div class="section-label">
+            <span class="lang-text" data-en="About UnifyHub" data-hi="UnifyHub के बारे में">About UnifyHub</span>
+          </div>
+          <h2 class="section-title">
+            <span class="lang-text" data-en="Empowering India Through" data-hi="भारत को सशक्त बनाना">Empowering India Through</span><br />
+            <span class="gradient-text lang-text" data-en="Strategic Alliances" data-hi="रणनीतिक गठबंधन">Strategic Alliances</span>
+          </h2>
+          <p class="section-desc lang-text"
+             data-en="UnifyHub is India's most trusted Alliance Market platform, connecting ambitious individuals with proven business opportunities. Since 2016, we've helped over 5.2 lakh partners build sustainable income streams through our transparent, technology-driven network."
+             data-hi="UnifyHub भारत का सबसे भरोसेमंद एलायंस मार्केट प्लेटफॉर्म है, जो महत्वाकांक्षी व्यक्तियों को सिद्ध व्यावसायिक अवसरों से जोड़ता है। 2016 से, हमने 5.2 लाख से अधिक साझेदारों को टिकाऊ आय स्रोत बनाने में मदद की है।">
+            UnifyHub is India's most trusted Alliance Market platform, connecting ambitious individuals with proven business opportunities. Since 2016, we've helped over 5.2 lakh partners build sustainable income streams through our transparent, technology-driven network.
+          </p>
+
+          <div class="about-features-grid">
+            <div class="about-feature-item" data-aos="zoom-in" data-aos-delay="150">
+              <div class="af-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <h5 class="lang-text" data-en="Proven Growth System" data-hi="सिद्ध विकास प्रणाली">Proven Growth System</h5>
+                <p class="lang-text" data-en="Structured plans with guaranteed commission structures." data-hi="गारंटीड कमीशन संरचना के साथ संरचित योजनाएं।">Structured plans with guaranteed commission structures.</p>
+              </div>
+            </div>
+            <div class="about-feature-item" data-aos="zoom-in" data-aos-delay="200">
+              <div class="af-icon"><i class="fa-solid fa-headset"></i></div>
+              <div>
+                <h5 class="lang-text" data-en="24/7 Support" data-hi="24/7 सहायता">24/7 Support</h5>
+                <p class="lang-text" data-en="Dedicated mentors and support team always available." data-hi="समर्पित मेंटर और सहायता टीम हमेशा उपलब्ध।">Dedicated mentors and support team always available.</p>
+              </div>
+            </div>
+            <div class="about-feature-item" data-aos="zoom-in" data-aos-delay="250">
+              <div class="af-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+              <div>
+                <h5 class="lang-text" data-en="Smart Dashboard" data-hi="स्मार्ट डैशबोर्ड">Smart Dashboard</h5>
+                <p class="lang-text" data-en="Real-time earnings, team, and performance analytics." data-hi="रियल-टाइम कमाई, टीम और प्रदर्शन एनालिटिक्स।">Real-time earnings, team, and performance analytics.</p>
+              </div>
+            </div>
+            <div class="about-feature-item" data-aos="zoom-in" data-aos-delay="300">
+              <div class="af-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h5 class="lang-text" data-en="Free Training" data-hi="मुफ्त प्रशिक्षण">Free Training</h5>
+                <p class="lang-text" data-en="Weekly online/offline training sessions for all members." data-hi="सभी सदस्यों के लिए साप्ताहिक ऑनलाइन/ऑफलाइन प्रशिक्षण सत्र।">Weekly online/offline training sessions for all members.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#plans" class="btn btn-cta mt-4 ripple-btn magnetic-btn lang-text"
+             data-en="Explore Plans" data-hi="प्लान देखें">Explore Plans</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+  ============================================================ -->
+  <section id="how" class="section-pad bg-alt">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">
+          <span class="lang-text" data-en="Simple Process" data-hi="सरल प्रक्रिया">Simple Process</span>
+        </div>
+        <h2 class="section-title lang-text" data-en="How It Works" data-hi="कैसे काम करता है">How It Works</h2>
+        <p class="section-subtitle lang-text"
+           data-en="Get started in 4 easy steps and begin your earning journey today."
+           data-hi="4 आसान चरणों में शुरू करें और आज अपनी कमाई की यात्रा शुरू करें।">
+           Get started in 4 easy steps and begin your earning journey today.
+        </p>
+      </div>
+
+      <div class="how-timeline">
+        <div class="how-step" data-aos="fade-up" data-aos-delay="0">
+          <div class="step-num">01</div>
+          <div class="step-icon-wrap"><i class="fa-solid fa-user-plus"></i></div>
+          <h4 class="lang-text" data-en="Register Free" data-hi="मुफ्त पंजीकरण">Register Free</h4>
+          <p class="lang-text" data-en="Create your account in under 2 minutes with basic details." data-hi="बुनियादी जानकारी के साथ 2 मिनट से कम में अपना खाता बनाएं।">Create your account in under 2 minutes with basic details.</p>
+        </div>
+        <div class="step-connector" data-aos="zoom-in" data-aos-delay="100"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="how-step" data-aos="fade-up" data-aos-delay="150">
+          <div class="step-num">02</div>
+          <div class="step-icon-wrap"><i class="fa-solid fa-layer-group"></i></div>
+          <h4 class="lang-text" data-en="Choose Your Plan" data-hi="अपना प्लान चुनें">Choose Your Plan</h4>
+          <p class="lang-text" data-en="Pick a plan from Bronze to Platinum based on your goals." data-hi="अपने लक्ष्यों के आधार पर Bronze से Platinum तक एक प्लान चुनें।">Pick a plan from Bronze to Platinum based on your goals.</p>
+        </div>
+        <div class="step-connector" data-aos="zoom-in" data-aos-delay="200"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="how-step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-num">03</div>
+          <div class="step-icon-wrap"><i class="fa-solid fa-share-nodes"></i></div>
+          <h4 class="lang-text" data-en="Build Your Network" data-hi="अपना नेटवर्क बनाएं">Build Your Network</h4>
+          <p class="lang-text" data-en="Refer friends, family, and colleagues using your unique link." data-hi="अपने यूनिक लिंक का उपयोग करके दोस्तों, परिवार और सहकर्मियों को रेफर करें।">Refer friends, family, and colleagues using your unique link.</p>
+        </div>
+        <div class="step-connector" data-aos="zoom-in" data-aos-delay="350"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="how-step" data-aos="fade-up" data-aos-delay="450">
+          <div class="step-num">04</div>
+          <div class="step-icon-wrap gradient-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+          <h4 class="lang-text" data-en="Earn & Withdraw" data-hi="कमाएं और निकालें">Earn &amp; Withdraw</h4>
+          <p class="lang-text" data-en="Watch your income grow. Withdraw directly to your bank account." data-hi="अपनी आय को बढ़ते देखें। सीधे अपने बैंक खाते में निकालें।">Watch your income grow. Withdraw directly to your bank account.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PLANS / PRICING
+  ============================================================ -->
+  <section id="plans" class="section-pad">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">
+          <span class="lang-text" data-en="Pricing Plans" data-hi="मूल्य योजनाएं">Pricing Plans</span>
+        </div>
+        <h2 class="section-title lang-text" data-en="Choose Your Alliance Plan" data-hi="अपना एलायंस प्लान चुनें">Choose Your Alliance Plan</h2>
+        <p class="section-subtitle lang-text"
+           data-en="Flexible plans designed to match every ambition. All plans include training, dashboard, and 24/7 support."
+           data-hi="हर महत्वाकांक्षा के अनुरूप लचीली योजनाएं। सभी योजनाओं में प्रशिक्षण, डैशबोर्ड और 24/7 सहायता शामिल है।">
+           Flexible plans designed to match every ambition. All plans include training, dashboard, and 24/7 support.
+        </p>
+      </div>
+
+      <div class="row g-4 plans-row">
+
+        <!-- Bronze -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="plan-card glass-card" data-plan="bronze">
+            <div class="plan-badge lang-text" data-en="Starter" data-hi="स्टार्टर">Starter</div>
+            <div class="plan-icon"><i class="fa-solid fa-medal"></i></div>
+            <h3 class="plan-name">Bronze</h3>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">1,000</span>
+              <span class="price-period lang-text" data-en="/one-time" data-hi="/एकबार">/one-time</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="₹200 per direct referral" data-hi="₹200 प्रति डायरेक्ट रेफरल">₹200 per direct referral</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="2% team commission" data-hi="2% टीम कमीशन">2% team commission</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Basic dashboard access" data-hi="बेसिक डैशबोर्ड एक्सेस">Basic dashboard access</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Online training modules" data-hi="ऑनलाइन प्रशिक्षण मॉड्यूल">Online training modules</span></li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> <span class="lang-text" data-en="Priority support" data-hi="प्राथमिकता सहायता">Priority support</span></li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> <span class="lang-text" data-en="Leadership bonus" data-hi="लीडरशिप बोनस">Leadership bonus</span></li>
+            </ul>
+            <a href="#calculator" class="btn btn-plan ripple-btn lang-text" data-en="Get Started" data-hi="शुरू करें">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Silver -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="plan-card glass-card" data-plan="silver">
+            <div class="plan-badge lang-text" data-en="Popular" data-hi="लोकप्रिय">Popular</div>
+            <div class="plan-icon"><i class="fa-solid fa-star"></i></div>
+            <h3 class="plan-name">Silver</h3>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">3,000</span>
+              <span class="price-period lang-text" data-en="/one-time" data-hi="/एकबार">/one-time</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="₹600 per direct referral" data-hi="₹600 प्रति डायरेक्ट रेफरल">₹600 per direct referral</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="5% team commission" data-hi="5% टीम कमीशन">5% team commission</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Advanced dashboard" data-hi="एडवांस्ड डैशबोर्ड">Advanced dashboard</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Weekly live training" data-hi="साप्ताहिक लाइव प्रशिक्षण">Weekly live training</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Priority support" data-hi="प्राथमिकता सहायता">Priority support</span></li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> <span class="lang-text" data-en="Leadership bonus" data-hi="लीडरशिप बोनस">Leadership bonus</span></li>
+            </ul>
+            <a href="#calculator" class="btn btn-plan ripple-btn lang-text" data-en="Get Started" data-hi="शुरू करें">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Gold (Featured) -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="plan-card glass-card plan-featured" data-plan="gold">
+            <div class="plan-crown"><i class="fa-solid fa-crown"></i></div>
+            <div class="plan-badge featured-badge lang-text" data-en="Best Value" data-hi="सर्वश्रेष्ठ मूल्य">Best Value</div>
+            <div class="plan-icon"><i class="fa-solid fa-gem"></i></div>
+            <h3 class="plan-name">Gold</h3>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">7,000</span>
+              <span class="price-period lang-text" data-en="/one-time" data-hi="/एकबार">/one-time</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="₹1,400 per direct referral" data-hi="₹1,400 प्रति डायरेक्ट रेफरल">₹1,400 per direct referral</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="10% team commission" data-hi="10% टीम कमीशन">10% team commission</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Premium dashboard + reports" data-hi="प्रीमियम डैशबोर्ड + रिपोर्ट">Premium dashboard + reports</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Daily live coaching" data-hi="दैनिक लाइव कोचिंग">Daily live coaching</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="24/7 VIP support" data-hi="24/7 VIP सहायता">24/7 VIP support</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Leadership bonus up to ₹50K" data-hi="₹50K तक लीडरशिप बोनस">Leadership bonus up to ₹50K</span></li>
+            </ul>
+            <a href="#calculator" class="btn btn-plan btn-plan-featured ripple-btn lang-text" data-en="Get Started" data-hi="शुरू करें">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Platinum -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="plan-card glass-card" data-plan="platinum">
+            <div class="plan-badge plat-badge lang-text" data-en="Elite" data-hi="एलीट">Elite</div>
+            <div class="plan-icon"><i class="fa-solid fa-diamond"></i></div>
+            <h3 class="plan-name">Platinum</h3>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">15,000</span>
+              <span class="price-period lang-text" data-en="/one-time" data-hi="/एकबार">/one-time</span>
+            </div>
+            <ul class="plan-features">
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="₹3,000 per direct referral" data-hi="₹3,000 प्रति डायरेक्ट रेफरल">₹3,000 per direct referral</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="15% team commission" data-hi="15% टीम कमीशन">15% team commission</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Elite dashboard + AI insights" data-hi="एलीट डैशबोर्ड + AI इनसाइट्स">Elite dashboard + AI insights</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Personal mentor assigned" data-hi="व्यक्तिगत मेंटर नियुक्त">Personal mentor assigned</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="24/7 concierge support" data-hi="24/7 कंसीयर्ज सहायता">24/7 concierge support</span></li>
+              <li><i class="fa-solid fa-check"></i> <span class="lang-text" data-en="Leadership bonus up to ₹2L" data-hi="₹2L तक लीडरशिप बोनस">Leadership bonus up to ₹2L</span></li>
+            </ul>
+            <a href="#calculator" class="btn btn-plan ripple-btn lang-text" data-en="Get Started" data-hi="शुरू करें">Get Started</a>
+          </div>
+        </div>
+
+      </div><!-- end .row -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS COUNTER SECTION
+  ============================================================ -->
+  <section id="stats" class="section-pad stats-section">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-lg-3 col-sm-6" data-aos="zoom-in" data-aos-delay="0">
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <h3 class="stat-number" data-target="520000">0</h3>
+            <p class="stat-label lang-text" data-en="Active Members" data-hi="सक्रिय सदस्य">Active Members</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+            <h3 class="stat-number" data-target="1000" data-suffix="Cr+">0</h3>
+            <p class="stat-label lang-text" data-en="Total Paid Out" data-hi="कुल भुगतान">Total Paid Out</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <h3 class="stat-number" data-target="28">0</h3>
+            <p class="stat-label lang-text" data-en="States Covered" data-hi="कवर किए गए राज्य">States Covered</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-card glass-card">
+            <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+            <h3 class="stat-number" data-target="99" data-suffix="%">0</h3>
+            <p class="stat-label lang-text" data-en="Partner Satisfaction" data-hi="साझेदार संतुष्टि">Partner Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EARNINGS CALCULATOR
+  ============================================================ -->
+  <section id="calculator" class="section-pad bg-alt">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">
+          <span class="lang-text" data-en="Income Estimator" data-hi="आय अनुमानक">Income Estimator</span>
+        </div>
+        <h2 class="section-title lang-text" data-en="Calculate Your Potential Earnings" data-hi="अपनी संभावित कमाई की गणना करें">Calculate Your Potential Earnings</h2>
+        <p class="section-subtitle lang-text"
+           data-en="See how much you could earn based on your plan and referral activity."
+           data-hi="अपने प्लान और रेफरल गतिविधि के आधार पर देखें कि आप कितना कमा सकते हैं।">
+           See how much you could earn based on your plan and referral activity.
+        </p>
+      </div>
+
+      <div class="calculator-wrap glass-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5 align-items-center">
+
+          <!-- Inputs -->
+          <div class="col-lg-6">
+            <div class="calc-inputs">
+
+              <div class="calc-field">
+                <label class="lang-text" data-en="Select Your Plan" data-hi="अपना प्लान चुनें">Select Your Plan</label>
+                <div class="plan-selector">
+                  <button class="plan-sel-btn active" data-plan-val="bronze">Bronze</button>
+                  <button class="plan-sel-btn" data-plan-val="silver">Silver</button>
+                  <button class="plan-sel-btn" data-plan-val="gold">Gold</button>
+                  <button class="plan-sel-btn" data-plan-val="platinum">Platinum</button>
+                </div>
+              </div>
+
+              <div class="calc-field">
+                <label>
+                  <span class="lang-text" data-en="Direct Referrals / Month:" data-hi="डायरेक्ट रेफरल / माह:">Direct Referrals / Month:</span>
+                  <strong id="refCountDisplay">5</strong>
+                </label>
+                <input type="range" id="refSlider" min="1" max="50" value="5" class="calc-slider" />
+                <div class="slider-labels"><span>1</span><span>25</span><span>50</span></div>
+              </div>
+
+              <div class="calc-field">
+                <label>
+                  <span class="lang-text" data-en="Team Size (Total):" data-hi="टीम साइज (कुल):">Team Size (Total):</span>
+                  <strong id="teamCountDisplay">20</strong>
+                </label>
+                <input type="range" id="teamSlider" min="5" max="500" value="20" class="calc-slider" />
+                <div class="slider-labels"><span>5</span><span>250</span><span>500</span></div>
+              </div>
+
+              <div class="calc-field">
+                <label>
+                  <span class="lang-text" data-en="Months of Activity:" data-hi="गतिविधि के महीने:">Months of Activity:</span>
+                  <strong id="monthsDisplay">6</strong>
+                </label>
+                <input type="range" id="monthsSlider" min="1" max="24" value="6" class="calc-slider" />
+                <div class="slider-labels"><span>1</span><span>12</span><span>24</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div class="col-lg-6">
+            <div class="calc-results">
+              <div class="calc-res-card">
+                <span class="res-label lang-text" data-en="Monthly Income" data-hi="मासिक आय">Monthly Income</span>
+                <span class="res-value" id="monthlyIncome">₹0</span>
+              </div>
+              <div class="calc-res-card highlight">
+                <span class="res-label lang-text" data-en="Total Projected Earnings" data-hi="कुल प्रत्याशित कमाई">Total Projected Earnings</span>
+                <span class="res-value" id="totalIncome">₹0</span>
+              </div>
+              <div class="calc-res-card">
+                <span class="res-label lang-text" data-en="ROI" data-hi="ROI">ROI</span>
+                <span class="res-value" id="roiValue">0x</span>
+              </div>
+
+              <div class="calc-breakdown">
+                <div class="breakdown-row">
+                  <span class="lang-text" data-en="Direct Income:" data-hi="डायरेक्ट आय:">Direct Income:</span>
+                  <strong id="directIncomeLine">₹0</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span class="lang-text" data-en="Team Commission:" data-hi="टीम कमीशन:">Team Commission:</span>
+                  <strong id="teamCommLine">₹0</strong>
+                </div>
+                <div class="breakdown-row disclaimer">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span class="lang-text" data-en="Indicative estimate. Actual results may vary." data-hi="संकेतात्मक अनुमान। वास्तविक परिणाम भिन्न हो सकते हैं।">Indicative estimate. Actual results may vary.</span>
+                </div>
+              </div>
+
+              <button class="btn btn-cta w-100 mt-3 ripple-btn confetti-btn lang-text"
+                      data-en="🎉 Claim This Earning Potential!" data-hi="🎉 इस कमाई की संभावना का दावा करें!">
+                🎉 Claim This Earning Potential!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section id="testimonials" class="section-pad">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">
+          <span class="lang-text" data-en="Success Stories" data-hi="सफलता की कहानियाँ">Success Stories</span>
+        </div>
+        <h2 class="section-title lang-text" data-en="What Our Partners Say" data-hi="हमारे साझेदार क्या कहते हैं">What Our Partners Say</h2>
+      </div>
+
+      <div class="owl-carousel testimonial-carousel" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonial-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text lang-text"
+             data-en='"I joined UnifyHub 8 months ago with the Gold plan. Today I earn ₹65,000/month consistently. The training and support team are amazing!"'
+             data-hi='"मैंने 8 महीने पहले Gold प्लान के साथ UnifyHub ज्वाइन किया। आज मैं लगातार ₹65,000/माह कमाता हूं। प्रशिक्षण और सहायता टीम शानदार है!"'>
+             "I joined UnifyHub 8 months ago with the Gold plan. Today I earn ₹65,000/month consistently. The training and support team are amazing!"
+          </p>
+          <div class="testi-author">
+            <img src="https://ui-avatars.com/api/?name=Rahul+Sharma&background=7c3aed&color=fff&size=60" alt="Rahul Sharma" loading="lazy" class="testi-avatar" />
+            <div>
+              <h5>Rahul Sharma</h5>
+              <span class="lang-text" data-en="Gold Partner, Delhi" data-hi="गोल्ड पार्टनर, दिल्ली">Gold Partner, Delhi</span>
+            </div>
+            <button class="testi-video-btn video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Watch Story">
+              <i class="fa-solid fa-circle-play"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text lang-text"
+             data-en='"As a homemaker, I never thought I could earn this much. UnifyHub''s Silver plan gave me financial independence. ₹38,000 last month!"'
+             data-hi='"एक गृहिणी के रूप में, मैंने कभी नहीं सोचा था कि मैं इतना कमा सकती हूं। UnifyHub के Silver प्लान ने मुझे वित्तीय स्वतंत्रता दी। पिछले महीने ₹38,000!"'>
+             "As a homemaker, I never thought I could earn this much. UnifyHub's Silver plan gave me financial independence. ₹38,000 last month!"
+          </p>
+          <div class="testi-author">
+            <img src="https://ui-avatars.com/api/?name=Priya+Patel&background=06b6d4&color=fff&size=60" alt="Priya Patel" loading="lazy" class="testi-avatar" />
+            <div>
+              <h5>Priya Patel</h5>
+              <span class="lang-text" data-en="Silver Partner, Ahmedabad" data-hi="सिल्वर पार्टनर, अहमदाबाद">Silver Partner, Ahmedabad</span>
+            </div>
+            <button class="testi-video-btn video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Watch Story">
+              <i class="fa-solid fa-circle-play"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text lang-text"
+             data-en='"Platinum plan changed my life completely. I built a team of 200+ in 6 months and my monthly income crossed ₹1.5 lakh. Truly India''s best!"'
+             data-hi='"Platinum प्लान ने मेरी जिंदगी पूरी तरह बदल दी। मैंने 6 महीने में 200+ की टीम बनाई और मेरी मासिक आय ₹1.5 लाख से अधिक हो गई। सच में भारत का सबसे अच्छा!"'>
+             "Platinum plan changed my life completely. I built a team of 200+ in 6 months and my monthly income crossed ₹1.5 lakh. Truly India's best!"
+          </p>
+          <div class="testi-author">
+            <img src="https://ui-avatars.com/api/?name=Amit+Verma&background=f59e0b&color=fff&size=60" alt="Amit Verma" loading="lazy" class="testi-avatar" />
+            <div>
+              <h5>Amit Verma</h5>
+              <span class="lang-text" data-en="Platinum Partner, Mumbai" data-hi="प्लैटिनम पार्टनर, मुंबई">Platinum Partner, Mumbai</span>
+            </div>
+            <button class="testi-video-btn video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Watch Story">
+              <i class="fa-solid fa-circle-play"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text lang-text"
+             data-en='"I was skeptical at first but UnifyHub''s transparency convinced me. 4 months in, I''ve already recovered my investment and earning ₹22,000/month!"'
+             data-hi='"पहले मुझे संदेह था लेकिन UnifyHub की पारदर्शिता ने मुझे यकीन दिलाया। 4 महीने में, मैंने अपना निवेश पहले ही वापस पा लिया और ₹22,000/माह कमा रहा हूं!"'>
+             "I was skeptical at first but UnifyHub's transparency convinced me. 4 months in, I've already recovered my investment and earning ₹22,000/month!"
+          </p>
+          <div class="testi-author">
+            <img src="https://ui-avatars.com/api/?name=Sunita+Rao&background=10b981&color=fff&size=60" alt="Sunita Rao" loading="lazy" class="testi-avatar" />
+            <div>
+              <h5>Sunita Rao</h5>
+              <span class="lang-text" data-en="Bronze Partner, Hyderabad" data-hi="ब्रॉन्ज़ पार्टनर, हैदराबाद">Bronze Partner, Hyderabad</span>
+            </div>
+            <button class="testi-video-btn video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Watch Story">
+              <i class="fa-solid fa-circle-play"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text lang-text"
+             data-en='"The mentorship at UnifyHub is unmatched. My mentor helped me scale to 150 team members. Now I earn while I sleep. Best decision of my life!"'
+             data-hi='"UnifyHub में मेंटरशिप बेमिसाल है। मेरे मेंटर ने मुझे 150 टीम सदस्यों तक स्केल करने में मदद की। अब मैं सोते हुए भी कमाता हूं। मेरे जीवन का सबसे अच्छा निर्णय!"'>
+             "The mentorship at UnifyHub is unmatched. My mentor helped me scale to 150 team members. Now I earn while I sleep. Best decision of my life!"
+          </p>
+          <div class="testi-author">
+            <img src="https://ui-avatars.com/api/?name=Kiran+Singh&background=ef4444&color=fff&size=60" alt="Kiran Singh" loading="lazy" class="testi-avatar" />
+            <div>
+              <h5>Kiran Singh</h5>
+              <span class="lang-text" data-en="Gold Partner, Chandigarh" data-hi="गोल्ड पार्टनर, चंडीगढ़">Gold Partner, Chandigarh</span>
+            </div>
+            <button class="testi-video-btn video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Watch Story">
+              <i class="fa-solid fa-circle-play"></i>
+            </button>
+          </div>
+        </div>
+
+      </div><!-- end owl-carousel -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TEAM SECTION
+  ============================================================ -->
+  <section id="team" class="section-pad bg-alt">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">
+          <span class="lang-text" data-en="Leadership" data-hi="नेतृत्व">Leadership</span>
+        </div>
+        <h2 class="section-title lang-text" data-en="Meet Our Leaders" data-hi="हमारे नेताओं से मिलें">Meet Our Leaders</h2>
+        <p class="section-subtitle lang-text"
+           data-en="Visionary minds building India's most powerful alliance ecosystem."
+           data-hi="भारत के सबसे शक्तिशाली एलायंस इकोसिस्टम का निर्माण करने वाले दूरदर्शी दिमाग।">
+           Visionary minds building India's most powerful alliance ecosystem.
+        </p>
+      </div>
+
+      <div class="owl-carousel team-carousel" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="team-card glass-card">
+          <div class="team-photo">
+            <img src="https://ui-avatars.com/api/?name=Vikram+Malhotra&background=7c3aed&color=fff&size=150&bold=true" alt="Vikram Malhotra" loading="lazy" />
+            <div class="team-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4>Vikram Malhotra</h4>
+            <span class="team-role lang-text" data-en="Founder & CEO" data-hi="संस्थापक और CEO">Founder &amp; CEO</span>
+          </div>
+        </div>
+
+        <div class="team-card glass-card">
+          <div class="team-photo">
+            <img src="https://ui-avatars.com/api/?name=Sneha+Gupta&background=06b6d4&color=fff&size=150&bold=true" alt="Sneha Gupta" loading="lazy" />
+            <div class="team-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4>Sneha Gupta</h4>
+            <span class="team-role lang-text" data-en="Co-Founder & COO" data-hi="सह-संस्थापक और COO">Co-Founder &amp; COO</span>
+          </div>
+        </div>
+
+        <div class="team-card glass-card">
+          <div class="team-photo">
+            <img src="https://ui-avatars.com/api/?name=Arjun+Nair&background=f59e0b&color=fff&size=150&bold=true" alt="Arjun Nair" loading="lazy" />
+            <div class="team-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4>Arjun Nair</h4>
+            <span class="team-role lang-text" data-en="CTO" data-hi="CTO">CTO</span>
+          </div>
+        </div>
+
+        <div class="team-card glass-card">
+          <div class="team-photo">
+            <img src="https://ui-avatars.com/api/?name=Divya+Sharma&background=10b981&color=fff&size=150&bold=true" alt="Divya Sharma" loading="lazy" />
+            <div class="team-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4>Divya Sharma</h4>
+            <span class="team-role lang-text" data-en="Head of Training" data-hi="प्रशिक्षण प्रमुख">Head of Training</span>
+          </div>
+        </div>
+
+        <div class="team-card glass-card">
+          <div class="team-photo">
+            <img src="https://ui-avatars.com/api/?name=Rohit+Joshi&background=ef4444&color=fff&size=150&bold=true" alt="Rohit Joshi" loading="lazy" />
+            <div class="team-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4>Rohit Joshi</h4>
+            <span class="team-role lang-text" data-en="Head of Partnerships" data-hi="साझेदारी प्रमुख">Head of Partnerships</span>
+          </div>
+        </div>
+
+      </div><!-- end team-carousel -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COUNTDOWN / LIMITED OFFER
+  ============================================================ -->
+  <section id="countdown" class="section-pad countdown-section">
+    <div class="countdown-particles"></div>
+    <div class="container text-center">
+      <div data-aos="zoom-in">
+        <div class="section-label">
+          <span class="lang-text" data-en="⏰ Limited Time Offer" data-hi="⏰ सीमित समय का ऑफर">⏰ Limited Time Offer</span>
+        </div>
+        <h2 class="section-title text-white lang-text" data-en="Special Launch Bonus Ends In" data-hi="विशेष लॉन्च बोनस समाप्त होगा">Special Launch Bonus Ends In</h2>
+        <p class="text-white-70 mb-5 lang-text"
+           data-en="Join now and get ₹500 welcome bonus + 3 months premium training FREE! Offer valid for limited members only."
+           data-hi="अभी जुड़ें और ₹500 वेलकम बोनस + 3 महीने की प्रीमियम ट्रेनिंग मुफ्त पाएं! ऑफर केवल सीमित सदस्यों के लिए वैध।">
+           Join now and get ₹500 welcome bonus + 3 months premium training FREE! Offer valid for limited members only.
+        </p>
+
+        <div class="countdown-timer" id="countdown-timer">
+          <div class="countdown-unit">
+            <span class="cd-num" id="cd-days">00</span>
+            <span class="cd-lbl lang-text" data-en="Days" data-hi="दिन">Days</span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="countdown-unit">
+            <span class="cd-num" id="cd-hours">00</span>
+            <span class="cd-lbl lang-text" data-en="Hours" data-hi="घंटे">Hours</span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="countdown-unit">
+            <span class="cd-num" id="cd-mins">00</span>
+            <span class="cd-lbl lang-text" data-en="Minutes" data-hi="मिनट">Minutes</span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="countdown-unit">
+            <span class="cd-num" id="cd-secs">00</span>
+            <span class="cd-lbl lang-text" data-en="Seconds" data-hi="सेकंड">Seconds</span>
+          </div>
+        </div>
+
+        <a href="#plans" class="btn btn-hero-primary btn-lg mt-5 ripple-btn confetti-btn magnetic-btn">
+          <i class="fa-solid fa-bolt"></i>
+          <span class="lang-text" data-en="Grab This Offer Now!" data-hi="यह ऑफर अभी लें!">Grab This Offer Now!</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VIDEO GALLERY
+  ============================================================ -->
+  <section id="videos" class="section-pad">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">
+          <span class="lang-text" data-en="Video Gallery" data-hi="वीडियो गैलरी">Video Gallery</span>
+        </div>
+        <h2 class="section-title lang-text" data-en="See UnifyHub in Action" data-hi="UnifyHub को एक्शन में देखें">See UnifyHub in Action</h2>
+      </div>
+
+      <div class="row g-4 video-grid">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="video-thumb glass-card video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <div class="vt-img" style="background:linear-gradient(135deg,#7c3aed,#06b6d4)">
+              <i class="fa-solid fa-circle-play vt-play"></i>
+            </div>
+            <div class="vt-info">
+              <h5 class="lang-text" data-en="UnifyHub Platform Overview" data-hi="UnifyHub प्लेटफॉर्म अवलोकन">UnifyHub Platform Overview</h5>
+              <span class="lang-text" data-en="5:32 • Platform Tour" data-hi="5:32 • प्लेटफॉर्म टूर">5:32 • Platform Tour</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-thumb glass-card video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <div class="vt-img" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
+              <i class="fa-solid fa-circle-play vt-play"></i>
+            </div>
+            <div class="vt-info">
+              <h5 class="lang-text" data-en="Rahul's Success Story" data-hi="राहुल की सफलता की कहानी">Rahul's Success Story</h5>
+              <span class="lang-text" data-en="8:15 • Testimonial" data-hi="8:15 • प्रशंसापत्र">8:15 • Testimonial</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="video-thumb glass-card video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <div class="vt-img" style="background:linear-gradient(135deg,#10b981,#06b6d4)">
+              <i class="fa-solid fa-circle-play vt-play"></i>
+            </div>
+            <div class="vt-info">
+              <h5 class="lang-text" data-en="How to Build Your Team" data-hi="अपनी टीम कैसे बनाएं">How to Build Your Team</h5>
+              <span class="lang-text" data-en="12:40 • Tutorial" data-hi="12:40 • ट्यूटोरियल">12:40 • Tutorial</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="video-thumb glass-card video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <div class="vt-img" style="background:linear-gradient(135deg,#1a1a2e,#7c3aed)">
+              <i class="fa-solid fa-circle-play vt-play"></i>
+            </div>
+            <div class="vt-info">
+              <h5 class="lang-text" data-en="CEO Vikram Shares the Vision" data-hi="CEO विक्रम ने विज़न साझा किया">CEO Vikram Shares the Vision</h5>
+              <span class="lang-text" data-en="3:20 • Message" data-hi="3:20 • संदेश">3:20 • Message</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="video-thumb glass-card video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <div class="vt-img" style="background:linear-gradient(135deg,#ef4444,#f59e0b)">
+              <i class="fa-solid fa-circle-play vt-play"></i>
+            </div>
+            <div class="vt-info">
+              <h5 class="lang-text" data-en="Annual Partner Summit 2024" data-hi="वार्षिक पार्टनर समिट 2024">Annual Partner Summit 2024</h5>
+              <span class="lang-text" data-en="15:00 • Event" data-hi="15:00 • इवेंट">15:00 • Event</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="video-thumb glass-card video-modal-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+            <div class="vt-img" style="background:linear-gradient(135deg,#06b6d4,#10b981)">
+              <i class="fa-solid fa-circle-play vt-play"></i>
+            </div>
+            <div class="vt-info">
+              <h5 class="lang-text" data-en="Getting Started – Step by Step" data-hi="शुरुआत – चरण दर चरण">Getting Started – Step by Step</h5>
+              <span class="lang-text" data-en="7:45 • Guide" data-hi="7:45 • गाइड">7:45 • Guide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section-pad bg-alt">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">
+          <span class="lang-text" data-en="Get In Touch" data-hi="संपर्क करें">Get In Touch</span>
+        </div>
+        <h2 class="section-title lang-text" data-en="Contact UnifyHub" data-hi="UnifyHub से संपर्क करें">Contact UnifyHub</h2>
+        <p class="section-subtitle lang-text"
+           data-en="Have questions? Our team is here to guide you every step of the way."
+           data-hi="प्रश्न हैं? हमारी टीम हर कदम पर आपका मार्गदर्शन करने के लिए यहाँ है।">
+           Have questions? Our team is here to guide you every step of the way.
+        </p>
+      </div>
+
+      <div class="row g-5 align-items-start">
+
+        <!-- Contact Info -->
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="contact-info-wrap">
+            <div class="contact-info-item glass-card">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h5 class="lang-text" data-en="Headquarters" data-hi="मुख्यालय">Headquarters</h5>
+                <p>UnifyHub Tower, Sector 62,<br />Noida, Uttar Pradesh – 201301</p>
+              </div>
+            </div>
+            <div class="contact-info-item glass-card">
+              <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h5 class="lang-text" data-en="Call Us" data-hi="हमें कॉल करें">Call Us</h5>
+                <p>+91 98765 43210<br />+91 11 4567 8900</p>
+              </div>
+            </div>
+            <div class="contact-info-item glass-card">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h5 class="lang-text" data-en="Email Us" data-hi="हमें ईमेल करें">Email Us</h5>
+                <p>support@unifyhub.in<br />partner@unifyhub.in</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="#" class="csoc-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="csoc-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="csoc-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="csoc-btn" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="#" class="csoc-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-8" data-aos="fade-left">
+          <form class="contact-form glass-card" id="contactForm" novalidate>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="lang-text" data-en="Full Name *" data-hi="पूरा नाम *">Full Name *</label>
+                  <input type="text" class="form-control custom-input" id="contactName" placeholder="Rahul Sharma" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="lang-text" data-en="Email Address *" data-hi="ईमेल पता *">Email Address *</label>
+                  <input type="email" class="form-control custom-input" id="contactEmail" placeholder="rahul@example.com" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="lang-text" data-en="Phone Number" data-hi="फोन नंबर">Phone Number</label>
+                  <input type="tel" class="form-control custom-input" id="contactPhone" placeholder="+91 98765 43210" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="lang-text" data-en="Plan Interest" data-hi="प्लान रुचि">Plan Interest</label>
+                  <select class="form-control custom-input" id="contactPlan">
+                    <option value="" class="lang-text" data-en="Select a plan" data-hi="एक प्लान चुनें">Select a plan</option>
+                    <option>Bronze</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                    <option>Platinum</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="lang-text" data-en="Your Message *" data-hi="आपका संदेश *">Your Message *</label>
+                  <textarea class="form-control custom-input" id="contactMessage" rows="4"
+                    placeholder="Tell us about your goals and how we can help…" required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-cta w-100 ripple-btn">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span class="lang-text" data-en="Send Message" data-hi="संदेश भेजें">Send Message</span>
+                </button>
+              </div>
+              <div class="col-12" id="formFeedback"></div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row g-5">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <a class="navbar-brand mb-3 d-inline-flex" href="#hero">
+                <span class="brand-icon"><i class="fa-solid fa-network-wired"></i></span>
+                <span class="brand-name">Unify<span class="brand-accent">Hub</span></span>
+              </a>
+              <p class="lang-text"
+                 data-en="India's most trusted Alliance Market platform. Empowering millions through technology-driven partnerships."
+                 data-hi="भारत का सबसे भरोसेमंद एलायंस मार्केट प्लेटफॉर्म। प्रौद्योगिकी-संचालित साझेदारी के माध्यम से लाखों को सशक्त बनाना।">
+                 India's most trusted Alliance Market platform. Empowering millions through technology-driven partnerships.
+              </p>
+              <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-6">
+            <h5 class="footer-heading lang-text" data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#hero"      class="lang-text" data-en="Home"       data-hi="होम">Home</a></li>
+              <li><a href="#about"     class="lang-text" data-en="About Us"   data-hi="हमारे बारे में">About Us</a></li>
+              <li><a href="#plans"     class="lang-text" data-en="Plans"      data-hi="प्लान">Plans</a></li>
+              <li><a href="#how"       class="lang-text" data-en="How It Works" data-hi="कैसे काम करता है">How It Works</a></li>
+              <li><a href="#team"      class="lang-text" data-en="Our Team"   data-hi="हमारी टीम">Our Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-6">
+            <h5 class="footer-heading lang-text" data-en="Support" data-hi="सहायता">Support</h5>
+            <ul class="footer-links">
+              <li><a href="#" class="lang-text" data-en="FAQ" data-hi="FAQ">FAQ</a></li>
+              <li><a href="#" class="lang-text" data-en="Grievance Policy" data-hi="शिकायत नीति">Grievance Policy</a></li>
+              <li><a href="#" class="lang-text" data-en="Privacy Policy" data-hi="गोपनीयता नीति">Privacy Policy</a></li>
+              <li><a href="#" class="lang-text" data-en="Terms of Use" data-hi="उपयोग की शर्तें">Terms of Use</a></li>
+              <li><a href="#contact"   class="lang-text" data-en="Contact Us" data-hi="संपर्क करें">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5 class="footer-heading lang-text" data-en="Stay Updated" data-hi="अपडेट रहें">Stay Updated</h5>
+            <p class="lang-text"
+               data-en="Subscribe for latest offers, training dates and partner news."
+               data-hi="नवीनतम ऑफर, प्रशिक्षण तिथियों और पार्टनर समाचार के लिए सब्सक्राइब करें।">
+               Subscribe for latest offers, training dates and partner news.
+            </p>
+            <form class="footer-newsletter" id="newsletterForm">
+              <input type="email" placeholder="your@email.com" required
+                     class="lang-text" data-en="your@email.com" data-hi="आपका@ईमेल.कॉम" />
+              <button type="submit" class="btn btn-cta ripple-btn" aria-label="Subscribe">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+            <div class="footer-badges mt-3">
+              <span><i class="fa-solid fa-shield-halved"></i> <span class="lang-text" data-en="Secure" data-hi="सुरक्षित">Secure</span></span>
+              <span><i class="fa-solid fa-certificate"></i> <span class="lang-text" data-en="DIPP Registered" data-hi="DIPP पंजीकृत">DIPP Registered</span></span>
+              <span><i class="fa-solid fa-lock"></i> SSL</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <p class="mb-0 lang-text"
+           data-en="© 2024 UnifyHub Pvt. Ltd. All rights reserved."
+           data-hi="© 2024 UnifyHub Pvt. Ltd. सर्वाधिकार सुरक्षित।">
+           © 2024 UnifyHub Pvt. Ltd. All rights reserved.
+        </p>
+        <p class="mb-0">
+          <span class="lang-text" data-en="Made with" data-hi="बनाया गया">Made with</span>
+          <i class="fa-solid fa-heart text-danger mx-1"></i>
+          <span class="lang-text" data-en="in India" data-hi="भारत में">in India</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING ELEMENTS
+  ============================================================ -->
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20UnifyHub!" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-tooltip lang-text" data-en="Chat with us!" data-hi="हमसे चैट करें!">Chat with us!</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ============================================================
+       VIDEO MODAL
+  ============================================================ -->
+  <div class="modal fade video-modal" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content glass-modal">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="videoFrame" src="" allowfullscreen title="Video"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
